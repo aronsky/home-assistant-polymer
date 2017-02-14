@@ -79,7 +79,7 @@ Polymer({
       case 'alarm_control_panel':
         return null;
       case 'sensor':
-        if (state.attributes.icon && state.attributes.icon.includes("weather")) {
+        if (state.attributes.icon && state.attributes.icon.includes('weather')) {
           return null;
         }
       default:
@@ -110,7 +110,7 @@ Polymer({
       case 'updater':
         return window.hassUtil.stateIcon(state);
       case 'sensor':
-        if (state.attributes.icon && state.attributes.icon.includes("weather")) {
+        if (state.attributes.icon && state.attributes.icon.includes('weather')) {
           return state.attributes.icon;
         }
         return null;
